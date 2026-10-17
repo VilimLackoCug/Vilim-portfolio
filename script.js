@@ -11,6 +11,7 @@ const I={
   fali:"images/fali.jpg",
   hermes:"images/hermes.jpg",
   frag:"images/frag.jpg",
+ saara:"images/saara.jpg",
   mm:"images/mm.jpg",
   dla:"images/dla.jpg",
   wish:"images/wish.jpg",
@@ -45,7 +46,7 @@ const G=[
 {t:"FaliVam Jedan Papir",r:"2D art, game design & narrative",y:2026,i:"fali",u:"https://eighthart.itch.io/fali-vam-jedan-papir",tg:["itch.io"],d:"A government office, endless queues and one dreaded sentence: \"You are missing one document.\" Can you get your paperwork in order before closing time without losing your mind?"},
 {t:"Frag/Mente",r:"Game designer & narrative writer",y:2026,i:"frag",u:"https://luke-slj.itch.io/fragmente",tg:["Top-down","Empathy game"],d:"A 2D top-down story game about fear, disorientation and dementia, told through an elderly person's eyes. Made for players 18 to 33 interested in empathy games."},
 {t:"Void of Hermes",r:"Narrative writer & additional sounds",y:2024,i:"hermes",u:"https://verontsik.itch.io/voidofhermes",tg:["Rhythm","Typing"],d:"Type out DNA code in rhythm to progress the data analysis, while worms try to break down your ship. Balance your time wisely."},
-{t:"Nine Lives of Fear",r:"Design team lead & narrative writer",y:2026,tg:[]}];
+{t:"Nine Lives of Fear",r:"Design team lead & narrative writer",y:2026,tg:["2D", "Narrative"],d:"A narrative-driven 2D adventure about a stray cat learning to survive, face his fears, and trust again."},
 /* =====================================================================
    3) FILMS  -  list F   (same idea as games, plus:)
      c    category for the filter buttons:  "d" Design | "p" Production | "e" Directing & editing
@@ -53,6 +54,7 @@ const G=[
    Tip: put films with poster + description first, they look best at the front.
    ===================================================================== */
 const F=[
+{t:"Saara",r:"Art director",y:2026,i:"saara",c:"d",tg:[SF,"Drama","Short"],d:"Saara has packed her bags yet again, searching for a place where she can finally belong. But, just as she's about to leave, she is enticed by bysterious visions and an unexpected yearning for intimacy."},
 {t:"Don't Look Away",r:"SFX props master & set dresser",y:2026,i:"dla",c:"d",tg:[SF,"Drama","Short"],d:"Two streamers on a 24-hour challenge, one bad mushroom trip, and a night that ends with hopefully a bang."},
 {t:"Wishful Thinking",r:"Production assistant",y:2026,i:"wish",c:"p",tg:[SF,"Comedy","Short"],d:"After a breakup, Lola casts a spell for the perfect boyfriend. Her mother falls for him too, and a surprising rival joins in."},
 {t:"Memory Merchant",r:"Production designer",y:2026,i:"mm",c:"d",tg:[SF,"Sci-fi","Short"],d:"In the near future memories can be extracted and sold. Ill and in need of money, Magnus enters the underground memory trade."},
