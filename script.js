@@ -43,7 +43,7 @@ vivex:"images/vivex.jpg",
    Example to add:
      {t:"New Game",r:"Game designer",y:2027,i:"newgame",u:"https://...",tg:["Puzzle"],d:"Short description."},
    ===================================================================== */
-const SF="Student film",MV="Music video",ANIM="Animation";
+const SF="Student film",MV="Music video";
 const G=[
 {t:"JazzWitch",r:"Game designer & producer",y:2026,i:"jazz",u:"https://store.steampowered.com/app/4952960/JazzWitch/",tg:["2D platformer","Steam"],d:"A fast-paced 2D platformer about building speed through movement combos: chain jumps, dashes and saxophone blasts. Outrun hazards across hand-drawn dimensions to an original jazz score."},
 {t:"You're Missing a Document",r:"2D art, game design & narrative",y:2026,i:"fali",u:"https://eighthart.itch.io/fali-vam-jedan-papir",tg:["itch.io"],d:"A government office, endless queues and one dreaded sentence: \"You are missing one document.\" Can you get your paperwork in order before closing time without losing your mind?"},
