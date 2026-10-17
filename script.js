@@ -27,6 +27,7 @@ structure:"images/structure.jpg",
   jewelry:"images/jewelry.jpg",
   come:"images/come.jpg",
   insomn:"images/insomn.jpg",
+vivex:"images/vivex.jpg",
   love:"images/love.jpg",
   rel:"images/rel.jpg",
 };
@@ -57,27 +58,29 @@ const G=[
 const F=[
 {t:"The Structure",r:"Production designer",y:2026,i:"structure",c:"d",tg:[SF,"Sci-fi","Short", "Horror"],d:"In a slightly altered Tallinn, a giant stone monolith begins to affect the city and its laws of physics. When physicist Hugo Vayas investigates the anomaly, his friend Rein Varjumäe is drawn into a struggle to conceal the truth."},
 {t:"Saara",r:"Art director",y:2026,i:"saara",c:"d",tg:[SF,"Drama","Short"],d:"Saara has packed her bags yet again, searching for a place where she can finally belong. But, just as she's about to leave, she is enticed by bysterious visions and an unexpected yearning for intimacy."},
+{t:"Memory Merchant",r:"Production designer",y:2026,i:"mm",c:"d",tg:[SF,"Sci-fi","Short"],d:"In the near future memories can be extracted and sold. Ill and in need of money, Magnus enters the underground memory trade."},
 {t:"Don't Look Away",r:"SFX props master & set dresser",y:2026,i:"dla",c:"d",tg:[SF,"Drama","Short"],d:"Two streamers on a 24-hour challenge, one bad mushroom trip, and a night that ends with hopefully a bang."},
 {t:"Wishful Thinking",r:"Production assistant",y:2026,i:"wish",c:"p",tg:[SF,"Comedy","Short"],d:"After a breakup, Lola casts a spell for the perfect boyfriend. Her mother falls for him too, and a surprising rival joins in."},
-{t:"Memory Merchant",r:"Production designer",y:2026,i:"mm",c:"d",tg:[SF,"Sci-fi","Short"],d:"In the near future memories can be extracted and sold. Ill and in need of money, Magnus enters the underground memory trade."},
-{t:"Sober Party",r:"Assistant director",y:2024,i:"sober",c:"p",tg:[SF,MV],d:"A chaotic house party and a mysterious woman force a man to dissociate into strange worlds and face his loneliness."},
 {t:"Bottlehunters",r:"Production designer",y:2026,i:"bottle",pos:"30% 50%",c:"d",tg:[SF,"Short"],d:"An elderly alcoholic, Mihhail, lives off collecting bottles, until environmental activists start collecting every bottle in the city."},
 {t:"In Her Shoes",r:"Production designer",y:2024,i:"inher",c:"d",tg:[SF,"Drama","Short"],d:"A hotel maid's obsession with a foreign musician crosses every boundary, leaving her to ask: did I want to be with her, or become her?"},
 {t:"Trapped",r:"Production designer",y:2024,i:"trapped",pos:"20% 50%",c:"d",tg:[SF,"Thriller","Short"],d:"A chambermaid discovers a guest is hiding his identity from the police, and must choose: execute or pardon?"},
 {t:"The Most Beautiful Smile in the World",r:"Costume designer",y:2025,i:"smile",c:"d",tg:[SF,"Drama","Short"],d:"Through the advice of an old man and against all odds, he finds ways to communicate with Alma. Being in love makes him forget about all the horror and deteriorating conditions in the wagon for the duration of the journey. It's about how love can give you a sense of purpose in the darkest moments of life, providing hope and strength for what lies ahead, even if only for a brief time."},
 {t:"Love Deception in Suite 21",r:"Production designer",y:2024,i:"love",c:"d",tg:[SF,"Melodrama","Short"],d:"An episode of the TV series explores the complexities of violence and the masks we wear to conceal our pain. Larissa and Antoni, a seemingly happy married couple on a getaway, find themselves in a heated argument that escalates to violence. Agnieszka, the maid, who has heard it all, decides to make a compassionate gesture towards Larissa, revealing a shared humanity despite language barriers. Their brief connection offers solace, but it's fleeting, disrupted by Antoni's return. Larissa, forced back into her facade, rejects Agnieszka completely, when their second engagement takes place. Larissa's subsequent actions reveal a profound internal conflict, ultimately culminating in a poignant moment of self-reflection."},
+{t:"Insomniac",r:"Director, editor & producer",y:2023,i:"insomn",c:"e",tg:[SF,"Documentary"],d:"A student tackles his problem with long running sleep issues."},
 {t:"Relentless",r:"Assistant director",y:2023,i:"rel",c:"p",tg:[SF,"Documentary"],d:"A determined young Estonian has dedicated his life to mastering the art of Muay Thai fighting while also teaching his craft to young beginners in a passionate way. His confidence and ambition have led him on the path to becoming the best of the best. Pushed to the limits by his own challenges, he has to remain a role model and inspiration to the children he teaches."},
-{t:"Huojuva Torni",r:"Production assistant",y:2025,i:"huoj",c:"p",tg:[SF,MV],d:"A group of individuals with inner struggles compete in a bingo game. The tension is followed with a big fight."},
+{t:"Sober Party",r:"Assistant director",y:2024,i:"sober",c:"p",tg:[SF,MV],d:"A chaotic house party and a mysterious woman force a man to dissociate into strange worlds and face his loneliness."},
+{t:"Huojuva Torni",r:"Production designer",y:2025,i:"huoj",c:"p",tg:[SF,MV],d:"A group of individuals with inner struggles compete in a bingo game. The tension is followed with a big fight."},
+{t:"Again",r:"Production assistant",y:2025,i:"mara",c:"d",tg:[SF,MV],d:"coming soon."},
 {t:"My Home",r:"First assistant director",y:2025,i:"myhome",pos:"45% 30%",c:"p",tg:[SF,"Musical",MV], d:"A cheerful girl Reti goes on a road trip with her friends, but having encountered two polar sides of friendship, she is now forced to understand which side is the real one for her."},
 {t:"Thirsty Dolphins",r:"Editor",y:2024,i:"thirsty",pos:"70% 50%",c:"e",tg:[SF,MV],d:"The music video follows a series of bizarre events in a store aisle, where ordinary shoppers transform into animal-like creatures, revealing their hidden desires and chaotic nature. As the chaos unfolds, a group of divine beings intervenes, locking the wild desires up."},
 {t:"Rotas",r:"Producer",y:2024,i:"jewelry",c:"p",tg:[SF,MV],d:"Klawdy wakes up on a beach, setting the stage for absurdity. Through the video he experiences real life glitches, absurd creatures following him to several different locations. Finally, Klawdy accepts the new, absurd reality and sits in a drak room with the followers."},
-{t:"Come Across Me",r:"Continuity",y:2024,i:"come",c:"p",tg:[SF,MV],d:"Two young people chase each other through sequences of comfort, memories and the unknown, unSl their bond finally breaks them free."},
-{t:"Insomniac",r:"Director, editor & producer",y:2023,i:"insomn",c:"e",tg:[SF,"Documentary"],d:"A student tackles his problem with long running sleep issues."}];
+{t:"Come Across Me",r:"Continuity",y:2024,i:"come",c:"p",tg:[SF,MV],d:"Two young people chase each other through sequences of comfort, memories and the unknown, until their bond finally breaks them free."},
+{t:"Vivex",r:"Author",y:2021,i:"vivex",c:"e",tg:[Animation],d:"Do you feel zombie-like in the morning? And do you feel tired right after waking up? Vivex is the right thing for you, then! A short animated parody advertisement for a remedy against fatigue, burnout and today's \"zombie era"\.}];
 /* =====================================================================
    4) OTHER CREDITS - films with no picture/info yet. Format: ["Title","Role, year"],
    When a film gets a poster, remove it from here and add it to list F above.
    ===================================================================== */
-const O=[["Mara on the Moon, Again","Production designer, 2025"],["Vivex","Author, 2021"],["Facade","Director & editor, 2020"],["Modern Crookshow","Director & editor, 2019"]];
+const O=[["Facade","Director & editor, 2020"],["Modern Crookshow","Director & editor, 2019"]];
 ot.innerHTML=O.map(o=>`<li>${o[0]}<small>${o[1]}</small></li>`).join('');
 /* =====================================================================
    5) ENGINE - builds the cards, info panels, tilt, drag and filters.
