@@ -1,0 +1,72 @@
+/* ====== COLORS & BASE ======
+   Change the look of the whole site here:
+   --bg page background | --g games section | --f films section | --ink main text | --mute grey text
+   --pink / --blue = games accents | --amber = films accents */
+:root{--bg:#0e0d18;--g:#171532;--f:#2b1a1d;--ink:#f1ecff;--mute:#a79fc4;--pink:#ff5c93;--blue:#6f8cff;--amber:#f0c36a;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth;scroll-padding-top:60px}
+body{background:var(--bg);color:var(--ink);font-family:'Bricolage Grotesque',system-ui,sans-serif;line-height:1.55;overflow-x:hidden}
+a{color:inherit}
+/* ====== NAVIGATION BAR ====== */
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;display:flex;justify-content:space-between;padding:14px 5vw;background:#0e0d18ee;backdrop-filter:blur(8px);font-weight:700}
+nav div{display:flex;gap:22px}nav a{text-decoration:none;color:var(--mute);border-bottom:2px solid transparent}nav a:hover,nav a.on{color:var(--ink);border-color:var(--pink)}
+/* ====== HERO (intro at the top) ====== */
+.hero{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:4vw;padding:6vh 5vw;min-height:80vh;position:relative}
+.hero{overflow:hidden}.hero>*:not(.bgc){position:relative;z-index:1}.hero h1{font-size:clamp(3rem,10vw,7.5rem);font-weight:800;line-height:.95;letter-spacing:-.03em}
+.hero p{max-width:34ch;margin-top:22px;color:var(--mute);font-size:1.15rem}
+.hero .go{display:flex;gap:12px;margin-top:28px;flex-wrap:wrap}
+.float{position:relative;height:min(460px,60vw)}.fl{position:absolute;transition:transform .12s linear}
+.fl.a{width:min(250px,42vw);left:2%;top:18%}.fl.b{width:min(230px,40vw);right:2%;top:0}
+/* ====== SECTIONS (shared) ====== */
+section{padding:9vh 0 10vh;position:relative;overflow:hidden}.bgc{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:0}section>*:not(.bgc){position:relative;z-index:1}.hd{padding:0 5vw;margin-bottom:26px}.hd h2{font-size:clamp(2rem,5vw,3.4rem);letter-spacing:-.02em}.hd p{color:var(--mute);max-width:52ch}
+/* ====== GAMES look: dark blue grid, pixel font (Silkscreen) ====== */
+#games{background:var(--g);background-image:linear-gradient(#ffffff08 1px,transparent 1px),linear-gradient(90deg,#ffffff08 1px,transparent 1px);background-size:28px 28px}
+#games h2{font-family:'Silkscreen',monospace;color:var(--blue)}#games h2:after{content:"_";animation:bl 1s steps(1) infinite}@keyframes bl{50%{opacity:0}}
+/* ====== FILMS look: dark burgundy, warm amber ====== */
+#films{background:var(--f);background-image:radial-gradient(#ffffff0a 1px,transparent 1px);background-size:5px 5px}#films h2{color:var(--amber)}
+/* ====== FILM FILTER BUTTONS ====== */
+.chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}.chip{background:none;border:2px solid #ffffff40;color:var(--ink);padding:6px 14px;border-radius:99px;font:inherit;font-weight:700;cursor:pointer}.chip.on,.chip:hover{background:var(--amber);color:#1a0f10;border-color:var(--amber)}
+/* ====== CAROUSEL + CARDS ======
+   .floppy .art / .pol .art = the area where the cover art sits INSIDE the frame image.
+   If you swap the frame PNGs, adjust the left/top/width/height percentages. */
+.car{position:relative}.track{display:flex;gap:26px;overflow-x:auto;scroll-snap-type:x mandatory;padding:26px 5vw 34px;scrollbar-width:none;cursor:grab}.track::-webkit-scrollbar{display:none}
+.arrow{position:absolute;top:40%;z-index:5;width:46px;height:46px;border-radius:50%;border:2px solid var(--ink);background:#0e0d18d0;color:var(--ink);font-size:20px;cursor:pointer}
+.arrow:hover,.arrow:focus-visible{background:var(--ink);color:var(--bg)}.arrow.l{left:1vw}.arrow.r{right:1vw}
+/* Arrows fade out automatically (class .off) when the row doesn't overflow or you're at the start/end. */
+.arrow{transition:opacity .2s}.arrow.off{opacity:0;pointer-events:none}
+.card{flex:0 0 min(250px,64vw);scroll-snap-align:center;cursor:pointer;outline:none;-webkit-user-select:none;user-select:none}
+.frame{position:relative;width:100%;aspect-ratio:var(--ar);transform:rotate(var(--r,0deg)) perspective(800px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg));transition:transform .2s,translate .2s}
+.frame>img.fr{position:absolute;inset:0;width:100%;height:100%;z-index:2;pointer-events:none}
+.art{position:absolute;overflow:hidden;z-index:1;background:#000}.art img{width:100%;height:100%;object-fit:cover;pointer-events:none;-webkit-user-drag:none}
+.floppy{--ar:1}.floppy .art{left:24%;top:37%;width:52%;height:47%}
+.pol{--ar:660/817;filter:drop-shadow(0 12px 14px #0008)}.pol .art{left:7%;top:7.5%;width:86%;height:70.5%}
+.card:nth-child(odd) .pol{--r:-1.6deg}.card:nth-child(even) .pol{--r:1.4deg}
+.card.on .frame,.card:focus-visible .frame{translate:0 -12px}
+.card:not(.on) .frame{filter:saturate(.7) brightness(.8)}.pol{filter:drop-shadow(0 12px 14px #0008)}
+.card.on .frame{filter:none}.card.on.fl-p .frame{filter:drop-shadow(0 16px 18px #000a)}
+.ph{display:grid;place-items:center;text-align:center;padding:14px;width:100%;height:100%;background:linear-gradient(160deg,#2a2a6e,#0b0a20);font-family:'Silkscreen',monospace;font-size:1rem;color:var(--pink)}
+.cap{margin-top:12px;text-align:center;transition:color .2s}
+.card .cap{font-family:'Caveat',cursive;font-size:1.5rem;color:#c9b9a0}.card.on .cap{color:var(--amber)}
+#gt .cap{font-family:'Silkscreen',monospace;font-size:.8rem;color:var(--mute)}#gt .card.on .cap{color:var(--ink)}
+/* ====== INFO PANELS under the carousels (#gd = games, #fd = films) ====== */
+.detail{margin:6px 5vw 0;max-width:980px;animation:in .35s}@keyframes in{from{opacity:0;transform:translateY(8px)}}
+#gd{border:2px solid var(--blue);background:#0b0a20;box-shadow:6px 6px 0 var(--blue)}
+#fd{border:2px solid var(--amber);background:#1a0f10;position:relative;box-shadow:6px 6px 0 #0006}
+.bar{display:flex;align-items:center;gap:7px;padding:8px 14px;background:var(--blue);color:#0b0a20;font-family:'Silkscreen',monospace;font-size:.8rem}.bar i{width:10px;height:10px;border:2px solid #0b0a20}
+.tk{padding:6px 18px;border-bottom:2px dashed var(--amber);color:var(--amber);font-family:'Silkscreen',monospace;font-size:.75rem;display:flex;justify-content:space-between}
+.dg{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.6fr);gap:30px;padding:26px;align-items:start}
+.dl h3{font-size:clamp(1.5rem,3vw,2.2rem);line-height:1.1}.role{margin-top:10px;font-weight:700}#gd .role{color:var(--pink)}#fd .role{color:var(--amber)}
+.tags{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}.tags span{border:1px solid #ffffff50;padding:2px 10px;font-size:.8rem;color:var(--mute)}
+.dr p{color:#d8d2ee;max-width:60ch}.dr .none{color:var(--mute);font-style:italic}.dr .btn{margin-top:18px}
+.btn{display:inline-block;padding:11px 20px;border:2px solid currentColor;font-weight:700;text-decoration:none;color:var(--ink)}.btn:hover,.btn:focus-visible{background:var(--ink);color:var(--bg)}
+#games .btn.alt{color:var(--blue)}#films .btn.alt{color:var(--amber)}.btn.pk{color:var(--pink)}
+.more{padding:30px 5vw 0;display:flex;gap:14px;flex-wrap:wrap}
+/* ====== "OTHER CREDITS" list ====== */
+.oth{padding:0 5vw;margin-top:44px}.oth h3{font-size:1.1rem;margin-bottom:12px;color:var(--amber)}.oth ul{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:8px}.oth li{padding:10px 14px;border:1px solid #ffffff30;color:#d8cfc0}.oth li small{display:block;color:var(--mute)}
+/* ====== FESTIVALS placeholder box ====== */
+.fest{margin:0 5vw;padding:48px 24px;border:2px dashed #ffffff40;text-align:center;color:var(--mute)}
+/* ====== CONTACT + FOOTER ====== */
+#contact{padding-bottom:12vh}.cl{padding:0 5vw;max-width:680px}.cl a{display:flex;justify-content:space-between;gap:16px;padding:18px 0;border-bottom:1px solid #ffffff30;font-size:1.2rem;text-decoration:none;transition:padding .2s}.cl a:hover{color:var(--pink);padding-left:12px}.cl span{color:var(--mute)}
+footer{padding:24px 5vw;color:var(--mute);font-size:.85rem}
+/* ====== MOBILE: layout changes for narrow screens ====== */
+@media(max-width:760px){.hero{grid-template-columns:1fr;min-height:0}.dg{grid-template-columns:1fr;gap:14px}.cl a{flex-direction:column;gap:2px}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}}

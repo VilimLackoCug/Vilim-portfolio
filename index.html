@@ -1,0 +1,42 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>Vilim Lacko Cug — Games &amp; Film</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;700;800&family=Silkscreen:wght@400;700&family=Caveat:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head><body>
+<!-- NAVIGATION: to add a link, copy one <a> and point href to a section id (e.g. href="#awards"). -->
+<nav><b>VC</b><div><a href="#games">Games</a><a href="#films">Films</a><a href="#awards">Festivals</a><a href="#contact">Contact</a></div></nav>
+<!-- HERO: name + intro text. The floating floppy/polaroid use images from the images/ folder.
+     The embroidery animation behind it is drawn in script.js (function hero). -->
+<header class="hero"><div><h1>Vilim Lacko Cug</h1><p>Game designer, narrative writer and production designer working across games and film.</p>
+<div class="go"><a class="btn pk" href="#games">See the games</a><a class="btn" href="#films">See the films</a></div></div>
+<div class="float" id="fl"><div class="fl a" data-d="22"><div class="frame floppy"><div class="art"><img alt="" src="images/jazz.jpg"></div><img class="fr" alt="" src="images/floppy.png"></div></div>
+<div class="fl b" data-d="-14"><div class="frame pol" style="--r:3deg"><div class="art"><img alt="" src="images/mm.jpg"></div><img class="fr" alt="" src="images/polaroid.png"></div></div></div></header>
+
+<!-- GAMES SECTION: the cards are NOT written here. They are generated from the list G in script.js.
+     To add or edit a game, change that list. Only the heading, intro text and the itch.io button live here. -->
+<section id="games"><div class="hd"><h2>A:\GAMES&gt;</h2><p>Pick a disk to load it. Drag, scroll or use the arrow keys to browse.</p></div>
+<div class="car"><button class="arrow l" aria-label="Previous">‹</button><div class="track" id="gt"></div><button class="arrow r" aria-label="Next">›</button></div>
+<div class="detail" id="gd" aria-live="polite"></div>
+<div class="more"><a class="btn alt" href="https://fleabagfenn.itch.io" target="_blank" rel="noopener">More games on itch.io</a></div></section>
+
+<!-- FILMS SECTION: cards come from list F in script.js, the small "Other credits" list from list O.
+     The filter chips are generated from the CH list in script.js. -->
+<section id="films"><div class="hd"><h2>Films</h2><p>Pick a polaroid for the details. Films with a poster and a synopsis come first.</p>
+<div class="chips" id="ch"></div></div>
+<div class="car"><button class="arrow l" aria-label="Previous">‹</button><div class="track" id="ft"></div><button class="arrow r" aria-label="Next">›</button></div>
+<div class="detail" id="fd" aria-live="polite"></div>
+<div class="oth"><h3>Other credits</h3><ul id="ot"></ul></div>
+<div class="more"><a class="btn alt" href="https://www.efis.ee/en/person/40849" target="_blank" rel="noopener">Full filmography on EFIS</a></div></section>
+
+<!-- FESTIVALS & AWARDS (placeholder). To fill it, replace the <div class="fest"> line with something like:
+     <ul class="oth-list"><li>Festival name, year: Official selection</li></ul>
+     and style it in style.css (look for the ".fest" rule). -->
+<section id="awards"><div class="hd"><h2>Festivals &amp; awards</h2></div><div class="fest">Coming soon. Selections and awards will be listed here.</div></section>
+
+<!-- CONTACT: each <a> is one row. Copy a row to add a link (Instagram, LinkedIn, etc.).
+     Left text = label, <span> = the address shown on the right. -->
+<section id="contact"><div class="hd"><h2>Contact</h2></div><div class="cl">
+<a href="mailto:VilimLackoCug@proton.me">Email <span>VilimLackoCug@proton.me</span></a>
+<a href="https://fleabagfenn.itch.io" target="_blank" rel="noopener">itch.io <span>fleabagfenn.itch.io</span></a>
+<a href="https://www.efis.ee/en/person/40849" target="_blank" rel="noopener">EFIS <span>efis.ee</span></a></div></section>
+<footer>© 2026 Vilim Lacko Cug</footer>
+<script src="script.js"></script></body></html>
