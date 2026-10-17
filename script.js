@@ -75,7 +75,7 @@ const F=[
    4) OTHER CREDITS - films with no picture/info yet. Format: ["Title","Role, year"],
    When a film gets a poster, remove it from here and add it to list F above.
    ===================================================================== */
-const O=[["Mara on the Moon, Again","Production designer, 2025"],["QNNID, Janune Delfiin","Editor, 2024"],["Vivex","Author, 2021"],["Facade","Director & editor, 2020"],["Modern Crookshow","Director & editor, 2019"]];
+const O=[["Mara on the Moon, Again","Production designer, 2025"],["Vivex","Author, 2021"],["Facade","Director & editor, 2020"],["Modern Crookshow","Director & editor, 2019"]];
 ot.innerHTML=O.map(o=>`<li>${o[0]}<small>${o[1]}</small></li>`).join('');
 /* =====================================================================
    5) ENGINE - builds the cards, info panels, tilt, drag and filters.
