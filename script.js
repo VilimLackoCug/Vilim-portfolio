@@ -92,7 +92,7 @@ ot.innerHTML=O.map(o=>`<li>${o[0]}<small>${o[1]}</small></li>`).join('');
 const card=(x,g,n)=>`<div class="card" tabindex="0" data-n="${n}"><div class="frame ${g?'floppy':'pol'}"><div class="art">${x.i?`<img src="${I[x.i]}" alt="${x.t}" style="object-position:${x.pos||'50% 50%'}">`:`<div class="ph">${x.t}</div>`}</div><img class="fr" alt="" src="${I[g?'floppy':'polaroid']}"></div><div class="cap">${x.t}</div></div>`;
 function setup(tr,det,data,g){
  const show=x=>{det.style.animation='none';det.offsetHeight;det.style.animation='';
-  det.innerHTML=(g?`<div class="bar"><i></i><i></i><i></i>&nbsp;${x.t.toUpperCase()}.EXE</div>`:`<div class="tk"><span>ADMIT ONE</span><span>${x.y}</span></div>`)+
+  det.innerHTML=(g?`<div class="bar"><i></i><i></i><i></i>&nbsp;${x.t.toUpperCase()}.EXE</div>`:`<div class="tk"><span>${x.y}</span></div>`)+
   `<div class="dg"><div class="dl"><h3>${x.t}</h3><p class="role">${x.r}${x.y?', '+x.y:''}</p></div><div class="dr">${x.tg&&x.tg.length?`<div class="tags">${x.tg.map(t=>`<span>${t}</span>`).join('')}</div>`:''}${x.d?`<p>${x.d}</p>`:`<p class="none">Synopsis coming soon.</p>`}${x.u?`<a class="btn ${g?'pk':''}" href="${x.u}" target="_blank" rel="noopener">${g?'Play or wishlist':'Watch'} ↗</a>`:''}</div></div>`};
  const sel=c=>{if(!c)return;tr.querySelectorAll('.card.on').forEach(n=>n.classList.remove('on'));c.classList.add('on');show(data[c.dataset.n])};
  const draw=f=>{tr.innerHTML=data.map((x,n)=>f(x)?card(x,g,n):'').join('');sel(tr.querySelector('.card'))};
