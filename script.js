@@ -43,7 +43,7 @@ vivex:"images/vivex.jpg",
    Example to add:
      {t:"New Game",r:"Game designer",y:2027,i:"newgame",u:"https://...",tg:["Puzzle"],d:"Short description."},
    ===================================================================== */
-const SF="Student film",MV="Music video";
+const SF="Student film",MV="Music video", ANIM="Animation";
 const G=[
 {t:"JazzWitch",r:"Game designer & producer",y:2026,i:"jazz",u:"https://store.steampowered.com/app/4952960/JazzWitch/",tg:["2D platformer","Steam"],d:"A fast-paced 2D platformer about building speed through movement combos: chain jumps, dashes and saxophone blasts. Outrun hazards across hand-drawn dimensions to an original jazz score."},
 {t:"You're Missing a Document",r:"2D art, game design & narrative",y:2026,i:"fali",u:"https://eighthart.itch.io/fali-vam-jedan-papir",tg:["itch.io"],d:"A government office, endless queues and one dreaded sentence: \"You are missing one document.\" Can you get your paperwork in order before closing time without losing your mind?"},
@@ -76,7 +76,7 @@ const F=[
 {t:"Thirsty Dolphins",r:"Editor",y:2024,i:"thirsty",pos:"70% 50%",c:"e",tg:[SF,MV],d:"The music video follows a series of bizarre events in a store aisle, where ordinary shoppers transform into animal-like creatures, revealing their hidden desires and chaotic nature. As the chaos unfolds, a group of divine beings intervenes, locking the wild desires up."},
 {t:"Rotas",r:"Producer",y:2024,i:"jewelry",c:"p",tg:[SF,MV],d:"Klawdy wakes up on a beach, setting the stage for absurdity. Through the video he experiences real life glitches, absurd creatures following him to several different locations. Finally, Klawdy accepts the new, absurd reality and sits in a drak room with the followers."},
 {t:"Come Across Me",r:"Continuity",y:2024,i:"come",c:"p",tg:[SF,MV],d:"Two young people chase each other through sequences of comfort, memories and the unknown, until their bond finally breaks them free."},
-{t:"Vivex",r:"Author",y:2021,i:"vivex",c:"e",tg:[Animation],d:"Do you feel zombie-like in the morning? And do you feel tired right after waking up? Vivex is the right thing for you, then! A short animated parody advertisement for a remedy against fatigue, burnout and today's \"zombie era\".}];
+{t:"Vivex",r:"Author",y:2021,i:"vivex",c:"e",tg:[ANIM],d:"Do you feel zombie-like in the morning? And do you feel tired right after waking up? Vivex is the right thing for you, then! A short animated parody advertisement for a remedy against fatigue, burnout and today's \"zombie era\".}];
 /* =====================================================================
    4) OTHER CREDITS - films with no picture/info yet. Format: ["Title","Role, year"],
    When a film gets a poster, remove it from here and add it to list F above.
