@@ -76,7 +76,7 @@ const F=[
 {t:"Thirsty Dolphins",r:"Editor",y:2024,i:"thirsty",pos:"70% 50%",c:"e",tg:[SF,MV],d:"The music video follows a series of bizarre events in a store aisle, where ordinary shoppers transform into animal-like creatures, revealing their hidden desires and chaotic nature. As the chaos unfolds, a group of divine beings intervenes, locking the wild desires up."},
 {t:"Rotas",r:"Producer",y:2024,i:"jewelry",c:"p",tg:[SF,MV],d:"Klawdy wakes up on a beach, setting the stage for absurdity. Through the video he experiences real life glitches, absurd creatures following him to several different locations. Finally, Klawdy accepts the new, absurd reality and sits in a drak room with the followers."},
 {t:"Come Across Me",r:"Continuity",y:2024,i:"come",c:"p",tg:[SF,MV],d:"Two young people chase each other through sequences of comfort, memories and the unknown, until their bond finally breaks them free."},
-{t:"Vivex",r:"Author",y:2021,i:"vivex",c:"e",d:"Do you feel zombie-like in the morning? And do you feel tired right after waking up? Vivex is the right thing for you, then! A short animated parody advertisement for a remedy against fatigue, burnout and today's \"zombie era\".}];
+{t:"Vivex",r:"Author",y:2021,i:"vivex",c:"e",d:"Do you feel zombie-like in the morning? And do you feel tired right after waking up? Vivex is the right thing for you, then! A short animated parody advertisement for a remedy against fatigue, burnout and today's \"zombie era\."}];
 /* =====================================================================
    4) OTHER CREDITS - films with no picture/info yet. Format: ["Title","Role, year"],
    When a film gets a poster, remove it from here and add it to list F above.
