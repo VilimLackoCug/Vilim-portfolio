@@ -46,7 +46,7 @@ const G=[
 {t:"You're Missing One Paper",r:"2D art, game design & narrative",y:2026,i:"fali",u:"https://eighthart.itch.io/fali-vam-jedan-papir",tg:["itch.io"],d:"A government office, endless queues and one dreaded sentence: \"You are missing one document.\" Can you get your paperwork in order before closing time without losing your mind?"},
 {t:"Frag/Mente",r:"Game designer & narrative writer",y:2026,i:"frag",u:"https://luke-slj.itch.io/fragmente",tg:["Top-down","Empathy game"],d:"A 2D top-down story game about fear, disorientation and dementia, told through an elderly person's eyes. Made for players 18 to 33 interested in empathy games."},
 {t:"Void of Hermes",r:"Narrative writer & additional sounds",y:2024,i:"hermes",u:"https://verontsik.itch.io/voidofhermes",tg:["Rhythm","Typing"],d:"Type out DNA code in rhythm to progress the data analysis, while worms try to break down your ship. Balance your time wisely."},
-{t:"Nine Lives of Fear",r:"Design team lead & narrative writer",y:2026,tg:["2D", "Narrative"],d:"A narrative-driven 2D adventure about a stray cat learning to survive, face his fears, and trust again."},
+{t:"Nine Lives of Fear",r:"Design team lead & narrative writer",y:2026,tg:["2D", "Narrative"],d:"A narrative-driven 2D adventure about a stray cat learning to survive, face his fears, and trust again."}];
 /* =====================================================================
    3) FILMS  -  list F   (same idea as games, plus:)
      c    category for the filter buttons:  "d" Design | "p" Production | "e" Directing & editing
