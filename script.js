@@ -31,6 +31,7 @@ vivex:"images/vivex.jpg",
   love:"images/love.jpg",
  mara:"images/mara.jpg",
   rel:"images/rel.jpg",
+   kodust:"images/kodust.jpg",
 };
 /* =====================================================================
    2) GAMES  -  list G
@@ -69,8 +70,9 @@ const F=[
 {t:"Love Deception in Suite 21",r:"Production designer",y:2024,i:"love",c:"d",tg:[SF,"Melodrama","Short"],d:"An episode of the TV series explores the complexities of violence and the masks we wear to conceal our pain. Larissa and Antoni, a seemingly happy married couple on a getaway, find themselves in a heated argument that escalates to violence. Agnieszka, the maid, who has heard it all, decides to make a compassionate gesture towards Larissa, revealing a shared humanity despite language barriers. Their brief connection offers solace, but it's fleeting, disrupted by Antoni's return. Larissa, forced back into her facade, rejects Agnieszka completely, when their second engagement takes place. Larissa's subsequent actions reveal a profound internal conflict, ultimately culminating in a poignant moment of self-reflection."},
 {t:"Insomniac",r:"Director, editor & producer",y:2023,i:"insomn",c:"e",tg:[SF,"Documentary"],d:"A student tackles his problem with long running sleep issues."},
 {t:"Relentless",r:"Assistant director",y:2023,i:"rel",c:"p",tg:[SF,"Documentary"],d:"A determined young Estonian has dedicated his life to mastering the art of Muay Thai fighting while also teaching his craft to young beginners in a passionate way. His confidence and ambition have led him on the path to becoming the best of the best. Pushed to the limits by his own challenges, he has to remain a role model and inspiration to the children he teaches."},
-{t:"Huojuva Torni",r:"Production designer",y:2025,i:"huoj",c:"p",tg:[SF,MV],d:"A group of individuals with inner struggles compete in a bingo game. The tension is followed with a big fight."},
-{t:"Again",r:"Production assistant",y:2025,i:"mara",c:"d",tg:[SF,MV],d:"When your heart is bleeding, not even the person you love the most can help you. Inner journeys might not always be comfortable, but are definitely the way - to go through and transform."},
+{t:"Kodust kaugel",r:"Production designer",y:2025,i:"kodust",pos:"45% 30%",c:"d",tg:[SF,MV]},
+{t:"Huojuva Torni",r:"Production assistant",y:2025,i:"huoj",c:"p",tg:[SF,MV],d:"A group of individuals with inner struggles compete in a bingo game. The tension is followed with a big fight."},
+{t:"Again",r:"Production designer",y:2025,i:"mara",c:"d",tg:[SF,MV],d:"When your heart is bleeding, not even the person you love the most can help you. Inner journeys might not always be comfortable, but are definitely the way - to go through and transform."},
 {t:"My Home",r:"First assistant director",y:2025,i:"myhome",pos:"45% 30%",c:"p",tg:[SF,"Musical",MV], d:"A cheerful girl Reti goes on a road trip with her friends, but having encountered two polar sides of friendship, she is now forced to understand which side is the real one for her."},
 {t:"Sober Party",r:"Assistant director",y:2024,i:"sober",c:"p",tg:[SF,MV],d:"A chaotic house party and a mysterious woman force a man to dissociate into strange worlds and face his loneliness."},
 {t:"Janune Delfiin",r:"Editor",y:2024,i:"thirsty",pos:"70% 50%",c:"e",tg:[SF,MV],d:"The music video follows a series of bizarre events in a store aisle, where ordinary shoppers transform into animal-like creatures, revealing their hidden desires and chaotic nature. As the chaos unfolds, a group of divine beings intervenes, locking the wild desires up."},
