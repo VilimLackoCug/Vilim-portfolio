@@ -58,6 +58,7 @@ const G=[
    Tip: put films with poster + description first, they look best at the front.
    ===================================================================== */
 const F=[
+{t:"Postponed ascension",r:"Author",y:2026,i:"ivan",c:"e",tg:[ANIM],d:"A satirical reimagining of what goes on inside the 4 walls of \"mama's boy.\" Is spiritual ascension really more important than lunch?"},
 {t:"The Structure",r:"Production designer",y:2026,i:"structure",c:"d",tg:[SF,"Sci-fi","Short", "Horror"],d:"In a slightly altered Tallinn, a giant stone monolith begins to affect the city and its laws of physics. When physicist Hugo Vayas investigates the anomaly, his friend Rein Varjumäe is drawn into a struggle to conceal the truth."},
 {t:"Saara",r:"Art director",y:2026,i:"saara",c:"d",tg:[SF,"Drama","Short"],d:"Saara has packed her bags yet again, searching for a place where she can finally belong. But, just as she's about to leave, she is enticed by bysterious visions and an unexpected yearning for intimacy."},
 {t:"Memory Merchant",r:"Production designer",y:2026,i:"mm",c:"d",tg:[SF,"Sci-fi","Short"],d:"In the near future memories can be extracted and sold. Ill and in need of money, Magnus enters the underground memory trade."},
@@ -78,7 +79,7 @@ const F=[
 {t:"Janune Delfiin",r:"Editor",y:2024,i:"thirsty",pos:"70% 50%",c:"e",tg:[SF,MV],d:"The music video follows a series of bizarre events in a store aisle, where ordinary shoppers transform into animal-like creatures, revealing their hidden desires and chaotic nature. As the chaos unfolds, a group of divine beings intervenes, locking the wild desires up."},
 {t:"Rotas",r:"Producer",y:2024,i:"jewelry",c:"p",tg:[SF,MV],d:"Klawdy wakes up on a beach, setting the stage for absurdity. Through the video he experiences real life glitches, absurd creatures following him to several different locations. Finally, Klawdy accepts the new, absurd reality and sits in a drak room with the followers."},
 {t:"Come Across Me",r:"Continuity",y:2024,i:"come",c:"p",tg:[SF,MV],d:"Two young people chase each other through sequences of comfort, memories and the unknown, until their bond finally breaks them free."},
-{t:"Vivex",r:"Author",y:2021,i:"vivex",c:"e",tg:[ANIM],d:"Do you feel zombie-like in the morning? And do you feel tired right after waking up? Vivex is the right thing for you, then! A short animated parody advertisement for a remedy against fatigue, burnout and today's zombie era."}];
+{t:"Vivex",r:"Author",y:2021,i:"vivex",c:"e",tg:[ANIM],d:"Do you feel zombie-like in the morning? And do you feel tired right after waking up? Vivex is the right thing for you, then! A short animated parody advertisement for a remedy against fatigue, burnout and today's \"zombie era.\"}];
 /* =====================================================================
    4) OTHER CREDITS - films with no picture/info yet. Format: ["Title","Role, year"],
    When a film gets a poster, remove it from here and add it to list F above.
