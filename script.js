@@ -12,6 +12,7 @@ const I={
   hermes:"images/hermes.jpg",
   frag:"images/frag.jpg",
  saara:"images/saara.jpg",
+ ivan:"images/ivan.jpg",
 structure:"images/structure.jpg",
   mm:"images/mm.jpg",
   dla:"images/dla.jpg",
